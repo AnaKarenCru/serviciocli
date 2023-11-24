@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category> 
+    <pattern>HOLA</pattern>
+    <template>
+        <random>
+            <li>Bienvenido a Sonrisas Mexicas, ¿en que te puedo ayudar?</li>
+            <li>Buen día, ¿quieres agendar una cita?</li>
+            <li>Sea bienvenid@. ¿desea agendar una cita?</li>
+            <li>Muy buen día ¿en que te puede ayudar Sonrisas Mexicanas?</li>
+        </random>
+    </template>
+ </category>
+ <category>
+     <pattern>CITA</pattern>
+     <template>Me puedes indicar el día que te gustaría tu cita y nombre completo</template>
+ </category>
+ <category>
+     <pattern>15 OCTUBRE</pattern>
+     <template>Entendido, los horarios disponibles son 13:00, 15:00 y 20:00. ¿Cuál te gustaría?</template>
+ </category>
+ <category>
+     <pattern>13:00</pattern>
+     <template>Excelente, tu cita ha sido agendada para <star/> hr, no olvides llegar 10 min antes. ¿Te podemos ayudar en algo más?</template>
+ </category>
+  <category>
+     <pattern>SI</pattern>
+     <template>¿En qué más te podemos ayudar?</template>
+ </category>
+  <category>
+     <pattern>NO</pattern>
+     <template>
+        <random>
+            <li>Perfecto, espero y te hallamos podido ayudar no olvides llegar 10 min antes de tu cita, Sonrisas Mexicanas te desea un excelente día.</li>
+            <li>Excelente día, no olvides llegar 10 min antes de tu cita</li>
+            <li>Fue un placer atenderte, te esperamos en Sonrisas Mexicanas</li>
+            <li>Buen día te desea Sonrisas Mexicanas</li>
+        </random>
+     </template>
+ </category>
+ <category>
+     <pattern>QUEJA</pattern>
+     <template>Me puedes indicar cuál es tu queja</template>
+ </category>
+ <category>
+         <pattern>*</pattern>
+         <template>Lamentamos que hallas tenido esta inconveniencia, tu queja se mandara a la surcursal.</template>
+     </category>
+</aiml>
