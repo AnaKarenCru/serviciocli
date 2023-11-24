@@ -5,26 +5,33 @@
     <template>
         <random>
             <li>Bienvenido a Sonrisas Mexicas, ¿en que te puedo ayudar?</li>
-            <li>Buen día, ¿quieres agendar una cita?</li>
-            <li>Sea bienvenid@. ¿desea agendar una cita?</li>
+            <li>Sea bienvenid@, ¿qué desea "CITA" O "QUEJA"?</li>
             <li>Muy buen día ¿en que te puede ayudar Sonrisas Mexicanas?</li>
         </random>
     </template>
  </category>
  <category>
      <pattern>CITA</pattern>
-     <template>Me puedes indicar el día que te gustaría tu cita y nombre completo</template>
+     <template>Me puedes indicar el día que te gustaría tu cita</template>
  </category>
  <category>
      <pattern>15 OCTUBRE</pattern>
      <template>Entendido, los horarios disponibles son 13:00, 15:00 y 20:00. ¿Cuál te gustaría?</template>
  </category>
  <category>
-     <pattern>13:00</pattern>
-     <template>Excelente, tu cita ha sido agendada para <star/> hr, no olvides llegar 10 min antes. ¿Te podemos ayudar en algo más?</template>
+     <pattern>13</pattern>
+     <template>Excelente, tu cita ha sido agendada, no olvides llegar 10 min antes. ¿Te podemos ayudar en algo más?</template>
  </category>
-  <category>
-     <pattern>SI</pattern>
+ <category>
+     <pattern>15</pattern>
+     <template>Excelente, tu cita ha sido agendada, no olvides llegar 10 min antes. ¿Te podemos ayudar en algo más?</template>
+ </category>
+ <category>
+     <pattern>20</pattern>
+     <template>Excelente, tu cita ha sido agendada, no olvides llegar 10 min antes. ¿Te podemos ayudar en algo más?</template>
+ </category>
+ <category>
+  <pattern>SI</pattern>
      <template>¿En qué más te podemos ayudar?</template>
  </category>
   <category>
@@ -43,7 +50,7 @@
      <template>Me puedes indicar cuál es tu queja</template>
  </category>
  <category>
-         <pattern>*</pattern>
+         <pattern>MAL SERVICIO</pattern>
          <template>Lamentamos que hallas tenido esta inconveniencia, tu queja se mandara a la surcursal.</template>
      </category>
 </aiml>
